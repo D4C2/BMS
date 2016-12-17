@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p124">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/query_title"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/sp_Condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:entries="@array/query_array">
+    </Spinner>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_condition"
+            android:hint="@string/condition_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="none"/>
+
+        <Button
+            android:id="@+id/bt_queryNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/queryNow"
+            android:textColor="#000000"
+            android:background="#00000000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/queryResult"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/ll_queryResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

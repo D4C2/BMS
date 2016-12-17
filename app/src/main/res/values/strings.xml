@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">图书管理系统</string>
+    <string name="barText_home">首页</string>
+    <string name="barText_aboutMe">我的图书</string>
+    <string name="barText_setting">设置</string>
+    <string name="login_button">登录</string>
+    <string name="exit_button">退出登录</string>
+    <string name="about_button">关于</string>
+    <string name="logon_err">用户名或密码错误！</string>
+    <string name="tv_login_user">账号</string>
+    <string name="tv_login_pwd">密码</string>
+    <string name="tv_toRegister">没有账号？快速注册</string>
+    <string name="register_err">用户名已存在！请重新输入......</string>
+    <string name="pwdHint">密码不能为空</string>
+    <string name="userHint">用户名不能为空</string>
+    <string name="Description">注：0为超级用户，1为图书管理员，2为普通用户。</string>
+    <string name="bt_comment">我要评论</string>
+    <string name="tv_comment_dialog">请在输入框中填写您的评论：</string>
+    <string name="txt_commentErr">您未登录！请先前往设置登录或注册以后才能评论。</string>
+    <string name="bt_query">图书查询</string>
+    <string name="bt_loan">图书借阅</string>
+    <string name="bt_return">图书归还</string>
+    <string name="tv_myLoan">我的借阅：</string>
+    <string name="tv_myComment">我的评论：</string>
+    <string name="menu_delete">删除评论</string>
+    <string name="menu_rewrite">重新评论</string>
+    <string name="empty_listView">您还没有评论或您需要登录以后才能查看评论！</string>
+    <string name="query_title">请在下方选择图书查询的方式：</string>
+    <string-array name="query_array">
+        <item>ISBN</item>
+        <item>书名</item>
+        <item>类别</item>
+        <item>全部查询</item>
+    </string-array>
+    <string name="condition_name">输入查询方式相关的信息</string>
+    <string name="queryNow">查询</string>
+    <string name="queryResult">查询结果：</string>
+    <string name="loanAfterQuery">借阅</string>
+    <string name="commentAfterQuery">评论</string>
+    <string name="tv_loanActivity">请在下方输入想要借阅图书的相关信息：</string>
+    <string name="loanBook">书名</string>
+    <string name="loanBookAuthor">作者</string>
+    <string name="returnActivity">请在下方输入想要归还图书的相关信息：</string>
+    <string name="returnBookName">输入想要归还的图书</string>
+    <string name="returnConfirm">归还</string>
+    <string name="returnMyBook">返回我的图书</string>
+    <string name="addBooks">图书录入</string>
+    <string name="ISBN">ISBN</string>
+    <string name="amount">数量</string>
+    <string name="category">分类</string>
+    <string name="setAddress">设置IP地址</string>
+    <string name="address">IP:</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p117">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        layout="@layout/activity_main_top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/topLayout" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_main_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/bottomLayout" />
+
+    <LinearLayout
+        android:id="@+id/ll_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/bt_query"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_search_api_holo_light"
+            android:drawableLeft="@drawable/ic_search_api_holo_light"
+            android:text="@string/bt_query"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/bt_loan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_menu_copy_holo_light"
+            android:drawableStart="@drawable/ic_menu_copy_holo_light"
+            android:text="@string/bt_loan"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/bt_return"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_menu_revert"
+            android:drawableLeft="@drawable/ic_menu_revert"
+            android:text="@string/bt_return"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_myLoan"
+        android:layout_below="@+id/ll_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_myLoan"
+        android:textColor="#238e23"
+        android:textSize="18sp"/>
+    <ListView
+        android:id="@+id/ll_myLoan"
+        android:layout_below="@+id/tv_myLoan"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_myComment"
+        android:layout_below="@+id/ll_myLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_myComment"
+        android:textColor="#238e23"
+        android:textSize="18sp"/>
+    <ListView
+        android:id="@id/android:list"
+        android:layout_below="@+id/tv_myComment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </ListView>
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_below="@+id/tv_myComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_listView"
+        android:textColor="#ff0000"
+        />
+
+</RelativeLayout>

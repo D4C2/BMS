@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p124">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returnActivity"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_returnBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:hint="@string/returnBookName"/>
+
+    <Button
+        android:id="@+id/bt_returnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330dp"
+        android:layout_marginStart="330dp"
+        android:text="@string/returnConfirm"/>
+
+    <TextView
+        android:id="@+id/tv_returnState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/bt_returnMyBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginLeft="330dp"
+        android:text="@string/returnMyBook"
+        android:textColor="#000000"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>
